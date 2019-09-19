@@ -1,0 +1,489 @@
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+b{
+	font-weight: bold;
+}
+p{
+	margin: 0.5em 0;
+}
+/* End Reset */
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/*------------------------
+	#GLOBAL/COMMON
+-------------------------*/
+body{
+	font-family: 'Oxygen';
+}
+h1{
+	color: #2b2c2d;
+	font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2{
+	font-size: 24px;
+	margin-bottom: 16px;
+}
+h3{
+    color: rgba(0,0,0,0.9);
+	font-size: 18px;
+    font-weight: 600;
+	line-height: 24px;
+}
+h4{
+	font-size: 16px;
+    line-height: 22px;
+    color: rgba(0,0,0,.9);
+}
+li{
+	list-style-type: disc;
+	margin: 5px 1em;
+}
+a{
+	color: #32ACD0;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+p{
+	line-height: 1.3em;
+}
+main{
+	position: relative;
+	top: 98px;
+}
+
+
+
+
+/*------------------------
+	#HEADER/NAV
+-------------------------*/
+.header{
+	background-color: #32ACD0;
+	height: 98px;
+	padding: 0.5em 1em;
+	position: fixed;
+	transition: all 0.4s ease;
+    width: 100%;
+	z-index: 2;
+}
+.header.sticky{
+	height: 70px;
+	transition: all 0.4s ease;
+}
+.logo{
+	width: 80px;
+	border-radius: 50%;
+	transition: all 0.4s ease;
+}
+.header.sticky .logo{
+	transition: all 0.4s ease;
+	width: 50px;
+}
+.main-nav{
+	float: right;
+	padding: 1.1em 0;
+	transition: all 0.4s ease;
+}
+.header.sticky .main-nav{
+	padding-top: 0.2em;
+	transition: all 0.4s ease;
+}
+.main-nav li{
+	display: inline;
+}
+.main-nav li a{
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+}
+.main-nav li a:hover{
+	text-decoration: underline;
+}
+.text-nav{
+	padding-right: 1em;
+	position: relative;
+    top: -20px;	
+}
+.hero{
+	background-image: url(img/bg-moon-compressor.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #0a171f;
+	display: table;
+	height: 300px;
+	width: 100%;
+	margin-bottom: 4em;
+    padding: 0 2em;
+	position: relative;
+    top: 98px;
+}
+.hero-inner{
+	display: table-cell;
+	vertical-align: middle;
+}
+.hero h1{
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 3em;
+	font-weight: 300;
+	margin-bottom: 0;
+	text-align: left;
+	text-transform: none;
+}
+.ticker{	
+	font-family: 'Open Sans';
+	display: inline-block;
+	position: relative;
+	white-space: nowrap;
+	top: 20px;
+	left: 0;
+	line-height: 65px;
+	color: #FFFFFF;
+	margin-top: 2px;
+	font-weight: bold;
+	height: 65px;
+	font-size: 50px;
+}
+::selection {
+  background: #7fc241; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #7fc241; /* Gecko Browsers */
+}
+@media screen and (max-width: 1400px){
+	.hero h1{
+		font-size: 2em;
+	}
+	.ticker{
+		font-size: 40px;
+		margin-top: 0;
+		height: 50px;
+	}
+}
+@media screen and (max-width: 1200px){
+	.hero{
+		background-size: 80%;
+		background-position: center center;
+		height: 250px;
+	}
+	.hero h1{
+		font-size: 1.7em;
+	}
+	.ticker{
+		font-size: 30px;
+	}
+}
+@media screen and (max-width: 1000px){
+	.hero{
+		background-size: contain;
+	}
+	.ticker li{
+		text-shadow: 1px 1px 1px gray;
+	}
+}
+@media screen and (max-width: 500px){
+	.header{
+		height: 70px;
+	}
+	.main-nav {
+		padding-top: 0.2em;
+	}
+	.main-nav li{
+		margin: 0;
+	}
+	.logo{
+		width: 50px;
+	}
+	.hero{
+		background-size: 200%;
+	}
+	.hero h1{
+		text-shadow: 1px 1px 1px gray;
+	}
+	.ticker{
+		font-size: 25px;
+	}
+	.text-nav{
+		top: -10px;
+	}
+	.icon-nav img{
+		width: 35px;
+	}
+	.hero,
+	main{
+		top: 49px;
+	}
+}
+
+
+
+
+
+/*------------------------
+	#PORTFOLIO
+-------------------------*/
+.work{
+	width: 95%;
+	max-width: 1700px;
+	margin: 2em auto;
+}
+.center{
+	text-align: center;
+	margin-bottom: 3em;
+}
+.project-holder{
+	border: 1px solid #bbbbbb;
+	float: left;
+	margin: 1%;
+	padding: 1em;
+	position: relative;
+	width: 23%;
+	height: 400px;
+}
+.project-holder:hover{
+	border: 1px solid #32ACD0;
+}
+.project-holder img{
+	max-width: 100%;
+}
+.project-details{
+	margin-top: 1em;
+}
+.project-details h3{
+	color: black;
+	font-weight: bold;
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+.project-link{
+    font-size: 14px;
+    font-style: italic;
+	font-weight: normal;
+}
+.popup-image{
+	max-width: 100%;
+}
+.overlay{
+	background-color: rgba(0,0,0,0.7);
+	display: none;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%
+}
+.popup{
+	background: white;
+	border: 2px solid #32ACD0;
+	display: none;
+	height: 600px;
+	overflow-y: scroll;
+	padding: 1.5em;
+	position: fixed;
+	left: 50%;
+	margin-left: -300px; /* Half the width */
+	top: 50%;
+	margin-top: -300px; /* Half the height */			
+	width: 600px;
+	z-index: 10;
+}
+.popup ul{
+	margin-bottom: 1em;
+}
+.popup-subtitle{
+	color: #32ACD0;
+}
+.modal-trigger {
+    background: #32ACD0;
+    color: white;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 1em;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+.close {
+	cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+.tech-list{
+	margin-top: 10px;
+}
+.tech-used{
+	border: 1px solid #32ACD0;
+	display: inline-block;
+	font-family: 'Open Sans';
+	font-size: 12px;
+	margin: 4px 4px 8px 0;
+	padding: 2px 5px;
+}
+.about{
+	margin: 2em auto;
+	width: 95%;
+	max-width: 800px;
+}
+.work-history{
+	box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 3px rgba(0,0,0,0.2);
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 2em;
+	width: 90%;
+}
+.work-history-title{
+	border-bottom: 1px solid;
+}
+.work-history-list{
+	margin-bottom: 2em;
+}
+.work-card{
+	list-style-type: none;
+	border-bottom: 1px solid #e2e2e2;
+    margin: 1em 0 0;
+    padding-bottom: 1em;
+}
+.work-time{
+	font-size: 14px;
+	font-style: italic;
+	margin-bottom: 2em;
+}
+#other-work{
+	text-align: center;
+}
+#other-work ul{
+	margin-bottom: 2em;	
+}
+#other-work ul li{
+	list-style-type: none;
+}
+@media screen and (max-width: 1380px){	
+	.project-holder{
+		margin: 1%;
+		width: 30%;
+	}
+}
+@media screen and (max-width: 950px){	
+	.project-holder{
+		width: 48%;
+	}
+}
+@media screen and (max-width: 640px){	
+	.popup{
+		height: auto;
+		max-height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		width: 95%;
+	}
+}
+@media screen and (max-width: 600px){	
+	.project-holder{
+		height: auto;
+		float: none;
+		margin: 1em 0;
+		width: 100%;
+	}
+}
+
+
+
+
+/*------------------------
+	#ABOUT
+-------------------------*/
+.about-picture{
+	border-radius: 50%;
+	display: block;
+    margin: 0 auto 1em;
+    max-width: 100%;
+    width: 200px;
+}
+
+
+
+
+
+/*------------------------
+	#FOOTER
+-------------------------*/
+.footer{
+	background: black;
+	height: 100px;
+	width: 100%;
+	margin-top: 2em;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	padding: 30px 0;
+	position: relative;
+	top: 110px;
+}
