@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- Opera Speed Dial Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png" />
+				
+	<!-- Standard Favicon -->
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	
+    <title>Portfolio</title>
+	
+	<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700' type='text/css'>
+	<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Oxygen' type='text/css'>
+	<link rel="stylesheet" href="main.css" type="text/css">
+  </head>
+  <body>
+	<header class="header" id="header">
+		<img src="img/logo.jpg" alt="cat logo" class="logo" />
+		<nav class="main-nav">
+			<ul>
+				<li><a href="https://brsportfolio.com#work" class="text-nav">Work</a></li>
+				<li><a href="https://brsportfolio.com/resume.html" class="text-nav">Resume</a></li>
+				<li><a href="https://brsportfolio.com/about.html" class="text-nav">About</a></li>
+				<li><a href="https://codepen.io/Radrei/#" class="icon-nav"><img src="img/codepen.png" alt="Codepen" /></a></li>
+				<li><a href="https://github.com/radrei" class="icon-nav"><img src="img/git.png" alt="github" /></a></li>
+			</ul>
+			
+		</nav>
+	</header>
+	<div class="hero">
+		<div class="hero-inner">
+			<h1>I'm <b>Brittany,</b></h1>
+			<p class="ticker">Front End Developer</li></p>
+		</div>
+	</div>
+	
+	<main>
+		<h2 id="work" class="center">Showcase Projects</h2>
+		
+		<div class="work clearfix">	
+			<div class="project-holder" id="project1">			
+				<a href="https://saharagrill.com/" target="_blank" class="project-link"><img src="img/projects/sahara.jpg" alt="Sahara Screenshot" /></a>				
+				<div class="project-details">
+					<h3>Sahara Mediterranean Grill</h3>
+					<a href="https://saharagrill.com/" target="_blank" class="project-link">saharagrill.com/</a>
+					<ul class="tech-list">
+						<li class="tech-used">PSD to WordPress</li>
+						<li class="tech-used">CSS | SCSS</li>
+						<li class="tech-used">Responsive</li>
+						<li class="tech-used">jQuery</li>
+					</ul>
+					<a href="javascript:void(0)" class="modal-trigger" id="project1trigger">Learn More</a>
+				</div>					
+			</div>	
+			
+			<div class="project-holder" id="project2">			
+				<a href="http://arnett.com" target="_blank" class="project-link"><img src="img/projects/arnett.jpg" alt="Arnett Screenshot" /></a>				
+				<div class="project-details">
+					<h3>Arnett, Inc.</h3>
+					<a href="http://arnett.com" target="_blank" class="project-link">arnett.com</a>
+					<ul class="tech-list">
+						<li class="tech-used">PSD to WordPress</li>
+						<li class="tech-used">CSS | SCSS</li>
+						<li class="tech-used">Responsive</li>
+						<li class="tech-used">jQuery</li>
+					</ul>
+					<a href="javascript:void(0)" class="modal-trigger" id="project2trigger">Learn More</a>
+				</div>					
+			</div>		
+			
+			<div class="project-holder" id="project3">
+				<a href="http://www.ctctechnologies.com/" target="_blank" class="project-link"><img src="img/projects/ctc.jpg" alt="CTC Screenshot" /></a>				
+				<div class="project-details">
+					<h3>CTC Technologies, Inc.</h3>
+					<a href="http://www.ctctechnologies.com/" target="_blank" class="project-link">www.ctctechnologies.com</a>
+					<ul class="tech-list">
+						<li class="tech-used">PSD to WordPress</li>
+						<li class="tech-used">CSS | SCSS</li>
+						<li class="tech-used">Responsive</li>
+						<li class="tech-used">jQuery</li>
+					</ul>
+					<a href="javascript:void(0)" class="modal-trigger" id="project3trigger">Learn More</a>
+				</div>					
+			</div>		
+			
+			<div class="project-holder" id="project4">
+				<a href="https://heartlandsheds.com/" target="_blank" class="project-link"><img src="img/projects/hs.png" alt="Heartland Sheds Screenshot" /></a>				
+				<div class="project-details">
+					<h3>Heartland Sheds</h3>
+					<a href="https://heartlandsheds.com/" target="_blank" class="project-link">heartlandsheds.com</a>
+					<ul class="tech-list">
+						<li class="tech-used">PSD to WordPress</li>
+						<li class="tech-used">CSS | SCSS</li>
+						<li class="tech-used">Responsive</li>
+						<li class="tech-used">jQuery</li>
+						<li class="tech-used">WooCommerce</li>
+					</ul>
+					<a href="javascript:void(0)" class="modal-trigger" id="project4trigger">Learn More</a>
+				</div>					
+			</div>		
+		</div>		
+	</main>
+	<!--Popups-->
+	<div class="overlay" id="overlay"></div>
+	<div class="popup" id="popup1">
+		<span class="close" id="close1">X</span>
+		<h2>Sahara Mediterranean Grill (2018)</h2>
+		<h3 class="popup-subtitle">About This Project:</h3>
+		
+		<ul>
+			<li>Newsletter integration with mailchimp</li>
+			<li>Order Now button opens modal that allows you to choose pickup or delivery (jQuery)</li>
+			<li>View today's hours coded with a switch statement & date functions (PHP), hours are entered in backend with ACF</li>
+			<li>Menu uses a simple jQuery accordion to display different categories</li>
+			<li>All data is entered into website with ACF</li>
+			<li>Contact form uses Gravity Forms, shows fields conditionally based on type of contact selected.</li>
+			<li>Google map created with Google's Maps API.</li>
+
+		</ul>
+	</div>
+	<div class="popup" id="popup2">
+		<span class="close" id="close2">X</span>
+		<h2>Arnett (2018)</h2>
+		<h3 class="popup-subtitle">About This Project:</h3>
+		
+		<ul>
+			<li>Mega menu created with native WordPress menus and CSS <br>
+			<img src="img/projects/arnett-menu.jpg" alt="Screenshot of Arnett's Mega Menu" class="popup-image" />
+			</li>
+			<li>Cool animations when hovering on the valves on the home page</li>
+			<li>Valves are a custom post type</li>
+			<li>Valves can be sorted in the catalog using query strings submitted by a form. The catalog-sorted page grabs the parameters in the string and performs a query based on those to show the correct posts (valves).</li>
+		</ul>
+	</div>
+	<div class="popup" id="popup3">
+		<span class="close" id="close3">X</span>
+		<h2>CTC Technologies (last updated 2019)</h2>
+		<h3 class="popup-subtitle">About This Project:</h3>
+		<p>The primary purpose of this website is a marketing vehicle to generate sales for CTC Technologies.</p>
+		<ul>
+			<li>On the <a href="https://www.ctctechnologies.com/our-partners/" target="_blank">Partners</a> page, each partner is a post in the "Partners" custom post type. Each partner is assigned a category (custom taxonomy). The category is added to each logo as a class, and filtered out with a jQuery script.
+			</li>
+			<li>The navigation menu is a native WordPress menu, styled with CSS and made interactable with a customized jQuery plugin</li>
+			<li>On mobile on the home page, the "solutions" section uses the same basic script as the navigation, and the data is entered with ACF.</li>
+			<li><a href="https://www.ctctechnologies.com/case-studies/" target="_blank">Case Studies</a> are their own custom post type, and are filtered by custom taxonomies on the page using <a href="https://facetwp.com/" target="_blank">FacetWP</a></li>
+		</ul>
+	</div>
+	<div class="popup" id="popup4">
+		<span class="close" id="close4">X</span>
+		<h2>Heartland Sheds (2018/2019)</h2>
+		<h3 class="popup-subtitle">About This Project:</h3>
+		<p>This is an e-commerce website using WooCommerce. This was a very complex e-commerce project with a lot of conditional logic needed for each shed. Most of this logic was done by other developers. My role was to supply the presentation layer and code in the ACF fields for each product. I will describe some of the key components that I developed below.</p>
+		<ul>
+			<li>On the <a href="https://heartlandsheds.com/sheds/" target="_blank">sheds</a> page, hovering on the shed reveals the different sizes available, as well as reviews. Clicking on a size brings you to the product page with that size selected (accomplished with query strings).</li>
+			<li>When you initially arrive on a product page (<a href="https://heartlandsheds.com/shed/workshop-ranch/" target="_blank">Ranch shed</a> as an example), there is a 360 video of the currently selected shed size. You can hover on the icons to the left to view different photos in the gallery.</li> Clicking on the large image opens a lightbox scrolled to the position of that image in the gallery.</li>
+			<li>On mobile, the gallery is simplified to a scrolling gallery with no thumbnails.</li>
+			<li>The comparison tables are created using Tablepress (to make it easier for the client to edit).</li>
+			<li>Clicking on a size on the right shows a different shed. All of the data below the fold also changes to reflect the new shed size. This data is all entered on the product page with ACF.</li>
+			<li>Hovering over the shed size shows the price of that size.</li>
+			<li>Shed sizes are custom product attributes.</li>
+			<li>For marketing/SEO purposes, a page template was created for the shed sizes with content that is edited in the description box on the attribute page in the dashboard. A WordPress query selects the sheds of that size and displays them below the content so that the customer can navigate directly to the product page. A list of shed sizes is also generated and can be viewed <a href="https://heartlandsheds.com/browse-sheds-by-size/" target="_blank">here</a>.</li>
+			<li>A <a href="https://heartlandsheds.com/branch-locations/" target="_blank">Branch Locations</a> page is generated with <a href="https://wpstorelocator.co/" target="_blank">WP Store Locator</a>, and customized with CSS and a bit of PHP to add some features to each listing (such as the "view branch info" button).</li>
+			Other integrations: affirm, yotpo, avatax, and mailchimp are integrated with this site.</li>
+
+		</ul>
+	</div>
+	
+	<footer class="footer">
+		<p>&copy; Brittany Stafford.</p>
+		<p>staffordbrittanyr@gmail.com</p>
+	</footer>
+	
+	
+	<script src="js/scripts.js"></script>
+  </body>
+</html>
